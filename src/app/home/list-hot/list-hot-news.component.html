@@ -1,0 +1,40 @@
+<div class="page-block page-news">
+  <div class="block-header">
+    <span>Được quan tâm nhất</span>
+  </div>
+  <div class="block-content">
+    <div class="radius-lb-6">
+      <ul class="page-news-list">
+        <li
+          *ngFor="let item of data; let i = index"
+          class="item-clear-float row"
+        >
+          <ng-container *ngIf="i <= 3">
+            <div class="page-news-avatar col-4 p-0 pl-2">
+              <a [href]="item.link" [title]="item.title">
+                <img
+                  [src]="item.img"
+                  alt="Làm cách nào để sinh con gái? 3 bí quyết giúp bạn toại nguyện"
+                  class="img-rounded"
+                />
+              </a>
+            </div>
+            <div class="page-news-desc-wrapper font-14 line-height col-8 pl-2">
+              <a
+                [href]="item.link"
+                class="page-news-title text-2line font-weight-bold"
+                rel="nofollow"
+                title="Rạch tầng sinh môn kiêng ăn gì? Những thực phẩm mẹ nên tránh xa"
+              >
+                {{ item.title }}
+              </a>
+              <div class="page-news-desc text-3line">
+                {{ item.text }}
+              </div>
+            </div>
+          </ng-container>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

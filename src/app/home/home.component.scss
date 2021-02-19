@@ -1,0 +1,23 @@
+.picsum-img-wrapper {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.banner-home{
+  height: 350px;
+}
+::ng-deep .carousel-inner,
+::ng-deep.carousel-item{
+  height: 100%;
+}
+.bg-transition{
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}

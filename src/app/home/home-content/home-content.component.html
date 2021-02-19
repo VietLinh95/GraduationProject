@@ -1,0 +1,33 @@
+<div>
+  <div class="article__card bg-white">
+    <!-- article header -->
+    <div class="article__card--meta">
+      <img [src]="dataContent.metaImg" alt="" class="article__card__img article__card__img__avatar ">
+      <div class="article__card__author">
+        <div class="article__card__author__name">
+          {{dataContent.metaName}}
+        </div>
+        <div class="article__card__author__datetime">
+          {{dataContent.metaTime}}
+        </div>
+      </div>
+    </div>
+    <!-- article body -->
+    <div class="article__card__body">
+      <h2 class="article__card__title ">
+        {{dataContent.titlePost}}
+      </h2>
+      <div class="article__card__content">
+        <div class="text-2line"> 
+          {{dataContent.contentPost}}
+
+        </div>
+        <img [src]="dataContent.imgPost" alt="" class="article__card__img rounded mx-auto d-block">
+      </div>
+    </div>
+    <!-- article footer -->
+    <div class="article__card__footer">
+
+    </div>
+  </div>
+</div>

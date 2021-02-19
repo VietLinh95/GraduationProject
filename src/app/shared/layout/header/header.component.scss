@@ -1,0 +1,48 @@
+.header {
+  &__navbar {
+    flex-grow: 0;
+    justify-content: center;
+    &__left{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    &__right{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    &__center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__tabs {
+    &__tab {
+      font-weight: bold;
+    }
+  }
+  &__form{
+    width: 25%;
+  }
+  &__btnlogin{
+    display: inline-block;
+  }
+  &__ipsearch {
+    border-radius: 50px;
+    width: 100%;
+  }
+  &__iconsearch {
+    margin-left: -40px;
+  }
+  &__menu {
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &__item {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
